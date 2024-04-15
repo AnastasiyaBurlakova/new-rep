@@ -176,11 +176,11 @@
 }
 
 
-.footer_item_vector {
-    width: 10.07px;
-    height: 12.81px;
-    top: 45.89px;
-    left: 1004.85px;
+.header_item_vector {
+    width: 10px;
+    height: 13px;
+    top: 46px;
+    left: 1004px;
     border: 1px;
     margin-left: 10px;
     /* angle: -44.76 deg; */
@@ -226,7 +226,7 @@
 
 .chess_advert {
     margin-top: 80px;
-    position: absolute;
+   
 }
 
 .chess_a {
@@ -241,6 +241,7 @@
     height: 640px;
     position: absolute;
     right: 0;
+    top: 300px;
 }
 
 .chess_a_img {
@@ -269,7 +270,6 @@ text-align: left;
 
 .team_info {
     font-size: 20px;
-    width: 500px;
     margin-top: 40px;
 
 }
@@ -295,6 +295,7 @@ text-align: left;
 .img_teacher {
     width: 320px;
     height: 320px;
+    margin-right: 28px;
 }
 
 
@@ -368,6 +369,7 @@ text-align: left;
 .third_screen_img {
     width: 320px;
     height: 320px;
+    margin-right: 28px;
 }
 
 .container_third_screen_img {
@@ -410,12 +412,11 @@ text-align: left;
 }
 
 
-.footer_btn {
+.header_btn {
     width: 218px;
     height: 48px;
-    top: 3475px;
-    left: 611px;
     border-radius: 8px;
+    background-color: #009465;
    
 
 }
@@ -445,6 +446,10 @@ text-align: left;
 
 }
 
+.third_screen_chess_desk {
+    margin-right: 50px;
+}
+
 .advert_img_ipad {
     display: none;
 }
@@ -454,12 +459,33 @@ text-align: left;
 }
 
 .chess_advert_media {
-    display: flex;
-    display: flex;
+    display: none;
     height: 640px;
     position: absolute;
     right: 0;
+
 }
+
+.circles_mobile {
+    width: 120px;
+    height: 60px;
+}
+
+
+.xz_item_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.circles_mobile {
+    display: none;
+}
+
+.half_circle_mobile {
+    display: none;
+}
+
 
 @media (max-width: 1100px){
     .advert_img {
@@ -477,7 +503,6 @@ text-align: left;
     }
     .third_screen_decor {
         padding-top: 50px;
-        padding-bottom: 50px;
     }
     .third_screen_circle {
         display: none;
@@ -491,6 +516,76 @@ text-align: left;
     .chess_advert_img {
         display: none;
     }
+    .chess_advert_media {
+        top: 300px;
+    }
 }
 
+@media (max-width: 650px){
+    .chess_advert_media {
+        display: none;
+    }
 
+    .header_item {
+        display: none;
+    }
+    .chess_a_img {
+        width: 100%;
+    }
+    .advert_img_ipad {
+        display: none;
+    }
+    .container_advert {
+        max-width: calc(100% - 50px - 50px);
+        margin: 0 auto;
+    }
+    .container_adverts {
+        padding-bottom: 0;
+    }
+    .half_circle_mobile {
+        padding-top: 60px;
+    }
+    .third_screen_subtract {
+        display: none;
+    }
+    .third_screen_chess_desk {
+        max-width: calc(100% - 50px - 50px);
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .chess_a {
+        width: 100%;
+        font-size: 12px;
+    }
+    .chess_h1 {
+        width: 100%;
+    }
+    .circles_mobile {
+        display: block;
+    }
+    .chess_h1 {
+        font-size: 40px;
+    }
+    .team {
+        font-size: 43px;
+    }
+    .team_info {
+        font-size: 12px;
+    }
+    .half_circle_mobile {
+        display: block;
+    }
+    .advert_team {
+        font-size: 40px;
+    }
+    .advert_info {
+        font-size: 12px;
+    }
+    .third_screen_h1 {
+        font-size: 40px;
+    }
+    .third_screen_p {
+        font-size: 12px;
+        width: 100%;
+    }
+}
